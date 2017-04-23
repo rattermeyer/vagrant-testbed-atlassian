@@ -1,0 +1,7 @@
+---
+- hosts: dbnodes
+  become: True
+  tasks:
+  - name: "install postgresql"
+    package:
+      name: postgresql
